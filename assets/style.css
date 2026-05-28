@@ -1,0 +1,171 @@
+/* ── Custom Properties ─────────────────────────────── */
+:root {
+  --teal-primary: #3A9EA0;
+  --teal-dark:    #2D7D80;
+  --teal-deep:    #1F5C5E;
+  --cream:        #FFF7F2;
+  --white:        #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-muted:   #888888;
+  --card-shadow:  0 2px 16px rgba(42,125,128,0.10);
+  --card-border:  1px solid rgba(58,158,160,0.10);
+  --r-card:       14px;
+  --r-btn:        20px;
+  --r-badge:      10px;
+}
+
+/* ── Reset ─────────────────────────────────────────── */
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+body { background:var(--cream); color:var(--text-primary); line-height:1.6; }
+a    { color:var(--teal-primary); text-decoration:none; }
+a:hover { text-decoration:underline; }
+img  { display:block; max-width:100%; }
+
+/* ── i18n ──────────────────────────────────────────── */
+[data-lang="de"] .lang-en { display:none !important; }
+[data-lang="en"] .lang-de { display:none !important; }
+
+/* ── Nav ───────────────────────────────────────────── */
+.nav {
+  position:sticky; top:0; z-index:100;
+  background:rgba(255,255,255,0.96);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(58,158,160,0.12);
+  padding:0 24px; height:56px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+.nav-logo-icon {
+  width:30px; height:30px; flex-shrink:0;
+  background:linear-gradient(135deg,var(--teal-primary),var(--teal-dark));
+  border-radius:8px;
+}
+.nav-logo-text { font-weight:700; color:#1a3a3b; font-size:15px; }
+.nav-right     { display:flex; align-items:center; gap:20px; }
+.nav-link      { font-size:13px; color:var(--teal-primary); }
+
+/* ── Language toggle ───────────────────────────────── */
+.lang-toggle {
+  background:#f0f0f0; border:none; border-radius:20px;
+  padding:3px; display:flex; gap:2px;
+}
+.lang-btn {
+  font-size:11px; padding:3px 10px; border-radius:16px;
+  border:none; background:transparent; color:var(--text-muted);
+  cursor:pointer; font-family:inherit; font-weight:500;
+  transition:background .15s, color .15s;
+}
+.lang-btn.active { background:var(--teal-primary); color:var(--white); font-weight:600; }
+
+/* ── Hero ──────────────────────────────────────────── */
+.hero {
+  background:linear-gradient(135deg,var(--teal-primary) 0%,var(--teal-dark) 50%,var(--teal-deep) 100%);
+  padding:48px 24px 60px; text-align:center;
+}
+.hero-badge {
+  display:inline-block;
+  background:rgba(255,255,255,0.15); color:rgba(255,255,255,0.92);
+  font-size:10px; letter-spacing:2.5px; padding:5px 16px;
+  border-radius:20px; margin-bottom:16px; font-weight:600;
+}
+.hero-title    { color:#fff; font-size:28px; font-weight:800; line-height:1.2; margin-bottom:12px; }
+.hero-subtitle { color:rgba(255,255,255,0.78); font-size:14px; max-width:320px; margin:0 auto; line-height:1.6; }
+
+/* ── Wave divider ──────────────────────────────────── */
+.wave-wrap {
+  background:linear-gradient(135deg,var(--teal-primary) 0%,var(--teal-dark) 50%,var(--teal-deep) 100%);
+  line-height:0;
+}
+.wave-wrap.slim {
+  background:linear-gradient(135deg,var(--teal-primary) 0%,var(--teal-dark) 100%);
+}
+
+/* ── Apps section ──────────────────────────────────── */
+.apps-section  { background:var(--cream); padding:28px 20px 32px; }
+.section-label { color:var(--teal-primary); font-size:10px; letter-spacing:2.5px; font-weight:700; margin-bottom:16px; }
+
+/* ── App card ──────────────────────────────────────── */
+.app-card {
+  background:var(--white); border-radius:var(--r-card);
+  padding:18px; display:flex; gap:14px; align-items:flex-start;
+  box-shadow:var(--card-shadow); border:var(--card-border); margin-bottom:12px;
+}
+.app-icon    { width:56px; height:56px; border-radius:13px; flex-shrink:0; box-shadow:0 2px 8px rgba(0,0,0,.10); }
+.app-info    { flex:1; min-width:0; }
+.app-name-row{ display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+.app-name    { font-size:16px; font-weight:700; }
+.platform-badge { background:#e8f5f5; color:var(--teal-dark); font-size:10px; padding:2px 9px; border-radius:var(--r-badge); font-weight:600; }
+.app-tagline { color:var(--text-muted); font-size:12px; margin-bottom:8px; }
+.app-desc    { color:#4a4a4a; font-size:12px; line-height:1.55; margin-bottom:10px; }
+
+/* Privacy-first badges */
+.privacy-badges { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+.privacy-badge  { background:#e8f5f5; color:var(--teal-dark); font-size:10px; padding:3px 9px; border-radius:10px; font-weight:500; }
+
+/* Actions */
+.app-actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.btn-play {
+  background:linear-gradient(135deg,var(--teal-primary),var(--teal-dark));
+  color:var(--white); font-size:11px; padding:7px 16px;
+  border-radius:var(--r-btn); font-weight:600; text-decoration:none;
+}
+.btn-play:hover { opacity:.9; text-decoration:none; }
+.privacy-link   { color:var(--teal-primary); font-size:11px; }
+
+/* ── Placeholder card ──────────────────────────────── */
+.app-placeholder {
+  background:#f5f0ed; border-radius:var(--r-card);
+  padding:16px 18px; border:1.5px dashed #d0c4bc;
+  display:flex; align-items:center; gap:14px; opacity:.75;
+}
+.placeholder-icon {
+  width:44px; height:44px; background:#ede8e5;
+  border-radius:11px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  font-size:22px; font-weight:300; color:#c0b8b4;
+}
+.placeholder-text { color:#b0a8a4; font-size:13px; font-style:italic; }
+
+/* ── Footer ────────────────────────────────────────── */
+.footer        { background:var(--teal-deep); padding:18px 24px; }
+.footer-top    { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.footer-copy   { color:rgba(255,255,255,.6); font-size:11px; }
+.footer-links  { display:flex; gap:14px; }
+.footer-links a{ color:rgba(255,255,255,.5); font-size:11px; }
+.footer-links a:hover { color:rgba(255,255,255,.8); text-decoration:none; }
+.footer-tagline{ border-top:1px solid rgba(255,255,255,.08); padding-top:10px; color:rgba(255,255,255,.3); font-size:10px; }
+
+/* ── Privacy: header band ──────────────────────────── */
+.privacy-header {
+  background:linear-gradient(135deg,var(--teal-primary),var(--teal-dark));
+  padding:24px 24px 28px; display:flex; align-items:center; gap:16px;
+}
+.privacy-header-icon  { width:52px; height:52px; border-radius:13px; flex-shrink:0; box-shadow:0 2px 10px rgba(0,0,0,.2); }
+.privacy-header-label { color:rgba(255,255,255,.75); font-size:10px; letter-spacing:1.5px; margin-bottom:3px; }
+.privacy-header-app   { color:var(--white); font-size:20px; font-weight:700; }
+
+/* ── Privacy: banner ───────────────────────────────── */
+.privacy-banner { background:#e8f5f5; border-left:3px solid var(--teal-primary); padding:12px 16px; border-radius:0 8px 8px 0; margin-bottom:24px; }
+.privacy-banner p { color:#2D6E70; font-size:13px; line-height:1.55; }
+
+/* ── Privacy: content ──────────────────────────────── */
+.privacy-content  { background:var(--cream); padding:24px 20px 32px; }
+.policy-date      { font-size:12px; color:var(--text-muted); margin-bottom:24px; }
+.policy-section   { margin-bottom:24px; }
+.policy-section h2{ color:var(--teal-primary); font-size:10px; letter-spacing:2px; font-weight:700; text-transform:uppercase; margin-bottom:8px; }
+.policy-section p { color:#333; font-size:13px; line-height:1.65; margin-bottom:8px; }
+.policy-section ul{ color:#333; font-size:13px; line-height:1.7; padding-left:20px; margin-bottom:8px; }
+.policy-section a { color:var(--teal-primary); }
+.data-tags        { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+.data-tag         { background:#e8f5f5; color:var(--teal-dark); font-size:11px; padding:4px 10px; border-radius:10px; }
+
+/* ── Responsive ────────────────────────────────────── */
+@media (min-width:600px) {
+  .hero            { padding:64px 40px 72px; }
+  .hero-title      { font-size:36px; }
+  .apps-section    { padding:36px 32px 40px; }
+  .app-card        { padding:22px; }
+  .privacy-content { padding:32px; }
+}

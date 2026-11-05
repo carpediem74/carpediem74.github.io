@@ -197,41 +197,11 @@
     white-space:nowrap;
   }
 
-  .phone{
-    justify-self:center;
-    width:230px;
-    aspect-ratio:9/19;
-    border-radius:34px;
-    background:rgba(255,255,255,0.10);
-    border:1px solid rgba(255,255,255,0.22);
-    box-shadow:0 30px 70px rgba(13,52,53,0.45);
-    padding:12px;
-    backdrop-filter:blur(4px);
+  .hero-shot{justify-self:center;width:260px;}
+  .hero-shot img{
+    width:100%;height:auto;
+    filter:drop-shadow(0 30px 40px rgba(13,52,53,0.45));
   }
-  .phone-screen{
-    width:100%;height:100%;
-    border-radius:24px;
-    background:linear-gradient(180deg,#ffffff,#f3fbfa);
-    overflow:hidden;
-    display:flex;flex-direction:column;
-  }
-  .ps-top{
-    background:linear-gradient(135deg,var(--teal-primary),var(--teal-dark));
-    color:#fff;padding:18px 16px 16px;
-  }
-  .ps-top .t{font-weight:700;font-size:0.95rem;}
-  .ps-top .s{font-size:0.7rem;opacity:0.85;margin-top:2px;}
-  .ps-body{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1;}
-  .ps-thumb{
-    height:62px;border-radius:10px;
-    background:
-      repeating-linear-gradient(45deg,rgba(58,158,160,0.10) 0 8px,rgba(58,158,160,0.04) 8px 16px);
-    border:1px solid rgba(42,125,128,0.12);
-    display:flex;align-items:flex-end;padding:8px;
-  }
-  .ps-thumb span{font-size:0.62rem;color:var(--teal-dark);font-weight:600;}
-  .ps-row{display:flex;gap:8px;}
-  .ps-row .ps-thumb{flex:1;height:48px;}
 
   /* ---------- WAVE ---------- */
   .wave{
@@ -444,7 +414,7 @@
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:860px){
     .hero-grid{grid-template-columns:1fr;gap:40px;}
-    .phone{display:none;}
+    .hero-shot{width:200px;}
     .features{grid-template-columns:repeat(2,1fr);}
     .hero{padding:64px 0 120px;}
   }
@@ -529,21 +499,9 @@
         </div>
 
         <!-- decorative app preview -->
-        <div class="phone" aria-hidden="true">
-          <div class="phone-screen">
-            <div class="ps-top">
-              <div class="t">Hautarchiv</div>
-              <div class="s"><span class="lang-de">Linker Unterarm</span><span class="lang-en">Left forearm</span></div>
-            </div>
-            <div class="ps-body">
-              <div class="ps-thumb"><span>2025 · 03 · 12</span></div>
-              <div class="ps-row">
-                <div class="ps-thumb"></div>
-                <div class="ps-thumb"></div>
-              </div>
-              <div class="ps-thumb"><span>2025 · 01 · 28</span></div>
-            </div>
-          </div>
+        <div class="hero-shot">
+          <img class="lang-de" src="../assets/screenshots/grid-de.png" width="828" height="1368" alt="Screenshot Hautarchiv: Übersicht der Aufnahmen mit Filter nach Körperstelle">
+          <img class="lang-en" src="../assets/screenshots/grid-en.png" width="828" height="1368" alt="Hautarchiv screenshot: overview of photos with body area filter">
         </div>
       </div>
     </div>

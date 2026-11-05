@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkinLog — Private Hautdokumentation für Android</title>
-<meta name="description" content="SkinLog — deine private Hautdokumentation. Fotos und Notizen bleiben lokal auf deinem Android-Gerät. Keine Cloud, kein Konto, kein Tracking.">
+<title>Hautarchiv — Muttermale &amp; Hautveränderungen privat dokumentieren</title>
+<meta name="description" content="Hautarchiv (früher SkinLog) — Muttermale und Hautveränderungen fotografieren, zuordnen und vergleichen. Fotos und Notizen bleiben lokal auf deinem Android-Gerät. Keine Cloud, kein Konto, kein Tracking.">
 <link rel="icon" type="image/png" href="../assets/icons/skinlog.png">
 <link rel="apple-touch-icon" href="../assets/icons/skinlog.png">
 <meta name="theme-color" content="#3A9EA0">
 <!-- Open Graph / Social preview -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Carpediem Apps">
-<meta property="og:title" content="SkinLog — Private Hautdokumentation für Android">
+<meta property="og:title" content="Hautarchiv — Muttermale &amp; Hautveränderungen privat dokumentieren">
 <meta property="og:description" content="Fotos und Notizen bleiben lokal auf deinem Android-Gerät. Keine Cloud, kein Konto, kein Tracking.">
 <meta property="og:url" content="https://carpediem74.github.io/skinlog/">
 <meta property="og:image" content="https://carpediem74.github.io/feature-graphic.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SkinLog — Private Hautdokumentation für Android">
+<meta name="twitter:title" content="Hautarchiv — Muttermale &amp; Hautveränderungen privat dokumentieren">
 <meta name="twitter:description" content="Fotos und Notizen bleiben lokal auf deinem Android-Gerät. Keine Cloud, kein Konto, kein Tracking.">
 <meta name="twitter:image" content="https://carpediem74.github.io/feature-graphic.png">
 <style>
@@ -301,6 +301,10 @@
   }
   .card p{margin:0;color:var(--text-muted);font-size:0.98rem;text-wrap:pretty;}
 
+  .pro-list{margin:0;padding-left:22px;color:var(--text-primary);}
+  .pro-list li{margin-bottom:10px;text-wrap:pretty;}
+  .pro-list li:last-child{margin-bottom:0;}
+
   /* ---------- SHOWCASE / FEATURE GRAPHIC ---------- */
   .showcase-frame{
     border-radius:20px;
@@ -467,8 +471,8 @@
       <div style="display:flex;align-items:center;gap:18px;">
         <a href="../" aria-label="Zurück zur Übersicht" style="display:inline-flex;align-items:center;gap:6px;font-size:0.9rem;font-weight:600;color:var(--teal-deep);text-decoration:none;opacity:0.75;transition:opacity .18s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">← <span class="lang-de">Zurück</span><span class="lang-en">Back</span></a>
         <div class="brand">
-          <span class="brand-mark"><img src="../assets/icons/skinlog.png" alt="SkinLog"></span>
-          <span>SkinLog</span>
+          <span class="brand-mark"><img src="../assets/icons/skinlog.png" alt="Hautarchiv"></span>
+          <span>Hautarchiv</span>
         </div>
       </div>
       <div class="lang-toggle" role="group" aria-label="Sprache / Language">
@@ -493,8 +497,8 @@
             <span class="lang-en">Your skin.<br>Your device.</span>
           </h1>
           <p class="subtitle">
-            <span class="lang-de">Dokumentiere Veränderungen deiner Haut mit Fotos und Notizen — komplett offline. Alles bleibt lokal auf deinem Android-Gerät.</span>
-            <span class="lang-en">Track changes in your skin with photos and notes — fully offline. Everything stays local on your Android device.</span>
+            <span class="lang-de">Behalte Muttermale und Hautveränderungen im Blick: fotografieren, der Körperstelle zuordnen, später vergleichen — komplett offline. Alles bleibt lokal auf deinem Android-Gerät.</span>
+            <span class="lang-en">Keep an eye on moles and skin changes: photograph, assign to a body area, compare later — fully offline. Everything stays local on your Android device.</span>
           </p>
           <div class="hero-actions">
             <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.skinlog.skinlog" target="_blank" rel="noopener" aria-label="Google Play">
@@ -528,7 +532,7 @@
         <div class="phone" aria-hidden="true">
           <div class="phone-screen">
             <div class="ps-top">
-              <div class="t">SkinLog</div>
+              <div class="t">Hautarchiv</div>
               <div class="s"><span class="lang-de">Linker Unterarm</span><span class="lang-en">Left forearm</span></div>
             </div>
             <div class="ps-body">
@@ -560,66 +564,98 @@
           <span class="lang-en">Everything you need — and nothing you don't</span>
         </h2>
         <p>
-          <span class="lang-de">Eine ruhige, fokussierte App für deine private Hautdokumentation. Ohne Konto, ohne Werbung, ohne Datensammlung.</span>
-          <span class="lang-en">A calm, focused app for your private skin documentation. No account, no ads, no data collection.</span>
+          <span class="lang-de">War das Muttermal letztes Jahr schon so groß? Mit Hautarchiv musst du dich nicht erinnern — diskret, privat und komplett offline.</span>
+          <span class="lang-en">Was that mole this big last year? With Hautarchiv you don't have to remember — discreet, private and completely offline.</span>
         </p>
       </div>
 
       <div class="features">
         <article class="card">
           <div class="ic">📷</div>
-          <h3><span class="lang-de">Lokale Fotos</span><span class="lang-en">Local photos</span></h3>
+          <h3><span class="lang-de">Aufnahmen</span><span class="lang-en">Photos</span></h3>
           <p>
-            <span class="lang-de">Aufnahmen per Kamera oder Galerie-Import — gespeichert in der geschützten Android-Sandbox deiner App.</span>
-            <span class="lang-en">Capture via camera or import from the gallery — stored inside your app's protected Android sandbox.</span>
+            <span class="lang-de">Fotografiere direkt mit der Kamera oder importiere Bilder aus der Galerie. Jede Aufnahme wird mit Datum gespeichert und kann eine Notiz bekommen.</span>
+            <span class="lang-en">Take photos with the camera or import them from your gallery. Each photo is saved with its date and can carry a note.</span>
           </p>
         </article>
 
         <article class="card">
           <div class="ic">📍</div>
-          <h3><span class="lang-de">Körperstellen</span><span class="lang-en">Body areas</span></h3>
+          <h3><span class="lang-de">Körperstellen &amp; Bereiche</span><span class="lang-en">Body areas</span></h3>
           <p>
-            <span class="lang-de">Organisiere Einträge nach Körperstelle und ergänze sie mit frei wählbaren Tags und Notizen.</span>
-            <span class="lang-en">Organise entries by body area and enrich them with custom tags and notes.</span>
+            <span class="lang-de">Ordne Aufnahmen Stellen wie Gesicht, Rücken, Arme oder Beine zu — bei Bedarf mit genauem Unterbereich, z. B. „Innenseite Unterarm“.</span>
+            <span class="lang-en">Assign photos to areas such as face, back, arms or legs — with a precise sub-area if needed, e.g. “inner forearm”.</span>
           </p>
         </article>
 
         <article class="card">
-          <div class="ic">🔔</div>
-          <h3><span class="lang-de">Erinnerungen</span><span class="lang-en">Reminders</span></h3>
+          <div class="ic">🔍</div>
+          <h3><span class="lang-de">Vergleichen</span><span class="lang-en">Compare</span></h3>
           <p>
-            <span class="lang-de">Lokale Push-Benachrichtigungen erinnern dich daran, deine Dokumentation regelmäßig fortzuführen.</span>
-            <span class="lang-en">Local push notifications remind you to keep your documentation up to date.</span>
+            <span class="lang-de">Lege zwei Aufnahmen derselben Stelle nebeneinander. Mit verschiebbarem Trenner und Zoom für jedes Bild erkennst du Veränderungen auf einen Blick.</span>
+            <span class="lang-en">Place two photos of the same spot side by side. A movable divider and zoom for each image let you see changes at a glance.</span>
           </p>
         </article>
 
         <article class="card">
-          <div class="ic">📊</div>
-          <h3><span class="lang-de">Bildvergleich</span><span class="lang-en">Image comparison</span></h3>
+          <div class="ic">📅</div>
+          <h3><span class="lang-de">Verlauf</span><span class="lang-en">History</span></h3>
           <p>
-            <span class="lang-de">Stelle Aufnahmen unterschiedlicher Zeitpunkte nebeneinander und erkenne Veränderungen auf einen Blick.</span>
-            <span class="lang-en">Place photos from different points in time side by side and spot changes at a glance.</span>
+            <span class="lang-de">Alle Aufnahmen chronologisch mit Datum, Uhrzeit und Notizen — auch hilfreich, um Narbenheilung, Ausschlag oder Behandlung festzuhalten.</span>
+            <span class="lang-en">All photos in chronological order with date, time and notes — also useful to document how a scar heals, a rash develops or a treatment goes.</span>
           </p>
         </article>
 
         <article class="card">
-          <div class="ic">📄</div>
-          <h3><span class="lang-de">PDF-Export</span><span class="lang-en">PDF export</span></h3>
+          <div class="ic">👨‍👩‍👧</div>
+          <h3><span class="lang-de">Familienprofile</span><span class="lang-en">Family profiles</span></h3>
           <p>
-            <span class="lang-de">Erstelle bei Bedarf einen sauberen PDF-Bericht — etwa für ein Gespräch mit Fachleuten deines Vertrauens.</span>
-            <span class="lang-en">Generate a clean PDF report whenever you need one — for example to discuss with professionals you trust.</span>
+            <span class="lang-de">Eigene Profile für dich, deine Kinder oder Angehörige — sauber getrennt auf einem Gerät. <em>(Pro)</em></span>
+            <span class="lang-en">Separate profiles for you, your children or relatives — kept apart on one device. <em>(Pro)</em></span>
           </p>
         </article>
 
         <article class="card">
           <div class="ic">🔒</div>
-          <h3><span class="lang-de">Privacy-first</span><span class="lang-en">Privacy-first</span></h3>
+          <h3><span class="lang-de">Privat &amp; offline</span><span class="lang-en">Private &amp; offline</span></h3>
           <p>
-            <span class="lang-de">Einstellungen werden verschlüsselt gespeichert (FlutterSecureStorage). Kein Tracking, keine Analytics.</span>
-            <span class="lang-en">Settings are stored encrypted (FlutterSecureStorage). No tracking, no analytics.</span>
+            <span class="lang-de">Kein Konto, keine Cloud, keine Werbung, kein Tracking. Optional schützt du die App per Fingerabdruck oder Gesichtserkennung.</span>
+            <span class="lang-en">No account, no cloud, no ads, no tracking. Optionally lock the app with your fingerprint or face unlock.</span>
           </p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- PRO -->
+  <section class="block" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:30px;">
+        <p class="eyebrow">Hautarchiv Pro</p>
+        <h2>
+          <span class="lang-de">Einmal kaufen, kein Abo</span>
+          <span class="lang-en">One-time purchase, no subscription</span>
+        </h2>
+        <p>
+          <span class="lang-de">Kostenlos starten und bei Bedarf mit einem einmaligen Kauf erweitern.</span>
+          <span class="lang-en">Start for free and upgrade with a single purchase whenever you like.</span>
+        </p>
+      </div>
+      <div class="card">
+        <ul class="pro-list">
+          <li><span class="lang-de"><b>PDF-Export:</b> übersichtlicher Bericht einzelner Aufnahmen oder ganzer Verläufe, z. B. zur Vorbereitung auf den Hautarzttermin</span><span class="lang-en"><b>PDF export:</b> clear reports of single photos or complete histories, e.g. to prepare for a dermatologist appointment</span></li>
+          <li><span class="lang-de"><b>Vergleich als Bild speichern</b></span><span class="lang-en"><b>Save comparisons as an image</b></span></li>
+          <li><span class="lang-de"><b>Erinnerungen:</b> lokale Benachrichtigung im gewünschten Abstand, auf Wunsch auch als Termin in deinem Kalender</span><span class="lang-en"><b>Reminders:</b> local notifications at the interval you choose, optionally as an event in your calendar</span></li>
+          <li><span class="lang-de"><b>Familienprofile:</b> eigene Profile für dich, deine Kinder oder Angehörige</span><span class="lang-en"><b>Family profiles:</b> separate profiles for you, your children or relatives</span></li>
+          <li><span class="lang-de"><b>Datensicherung:</b> alle Fotos und Notizen als ZIP-Archiv exportieren und auf einem neuen Gerät wieder importieren</span><span class="lang-en"><b>Backup:</b> export all photos and notes as a ZIP archive and import them on a new device</span></li>
+          <li><span class="lang-de"><b>Eigene Körperstellen</b> anlegen, umbenennen und sortieren</span><span class="lang-en"><b>Custom body areas:</b> create, rename and reorder</span></li>
+          <li><span class="lang-de"><b>Akzentfarben und Designs</b></span><span class="lang-en"><b>Accent colors and themes</b></span></li>
+        </ul>
+      </div>
+      <p class="showcase-caption">
+        <span class="lang-de">Hinweis: Hautarchiv ist kein Medizinprodukt und stellt keine Diagnose. Die App dient ausschließlich der persönlichen Fotodokumentation. Bei gesundheitlichen Fragen wende dich bitte an ärztliches Fachpersonal.</span>
+        <span class="lang-en">Note: Hautarchiv is not a medical device and does not provide a diagnosis. The app is intended solely for personal photo documentation. For health concerns, please consult a medical professional.</span>
+      </p>
     </div>
   </section>
 
@@ -634,11 +670,11 @@
         </h2>
       </div>
       <div class="showcase-frame">
-        <img src="../feature-graphic.png" alt="SkinLog — Privat. Lokal. Sicher. Hautdokumentation ohne Cloud.">
+        <img src="../feature-graphic.png" alt="Hautarchiv — Muttermale und Hautveränderungen im Blick. Offline, ohne Cloud, ohne Konto.">
       </div>
       <p class="showcase-caption">
-        <span class="lang-de">SkinLog — Privat. Lokal. Sicher. Hautdokumentation ohne Cloud, für Android.</span>
-        <span class="lang-en">SkinLog — Private. Local. Secure. Skin documentation without the cloud, for Android.</span>
+        <span class="lang-de">Hautarchiv — Muttermale &amp; Hautveränderungen im Blick. Offline, ohne Cloud, für Android.</span>
+        <span class="lang-en">Hautarchiv — Moles &amp; skin changes at a glance. Offline, no cloud, for Android.</span>
       </p>
     </div>
   </section>
@@ -654,8 +690,8 @@
             <span class="lang-en">Everything stays on your device</span>
           </h3>
           <p>
-            <span class="lang-de">SkinLog überträgt keine Daten ins Internet. Es gibt keine Cloud und kein Konto — deine Fotos und Notizen verlassen dein Android-Gerät nicht.</span>
-            <span class="lang-en">SkinLog never transmits data to the internet. There is no cloud and no account — your photos and notes never leave your Android device.</span>
+            <span class="lang-de">Hautarchiv überträgt keine Daten ins Internet. Es gibt keine Cloud und kein Konto — deine Fotos und Notizen verlassen dein Android-Gerät nicht.</span>
+            <span class="lang-en">Hautarchiv never transmits data to the internet. There is no cloud and no account — your photos and notes never leave your Android device.</span>
           </p>
         </div>
       </div>
@@ -672,8 +708,8 @@
             <span class="lang-en">Ready to keep an eye on your skin?</span>
           </h2>
           <p>
-            <span class="lang-de">Lade SkinLog herunter und beginne deine private Dokumentation — offline und sicher.</span>
-            <span class="lang-en">Download SkinLog and start your private documentation — offline and secure.</span>
+            <span class="lang-de">Lade Hautarchiv herunter und beginne deine private Dokumentation — offline und sicher.</span>
+            <span class="lang-en">Download Hautarchiv and start your private documentation — offline and secure.</span>
           </p>
           <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.skinlog.skinlog" target="_blank" rel="noopener" aria-label="Google Play">
             <span class="tri"></span>
@@ -697,8 +733,8 @@
   <footer>
     <div class="wrap footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark"><img src="../assets/icons/skinlog.png" alt="SkinLog"></span>
-        <span>SkinLog</span>
+        <span class="brand-mark"><img src="../assets/icons/skinlog.png" alt="Hautarchiv"></span>
+        <span>Hautarchiv</span>
         <span class="footer-family">
           <span class="lang-de">Eine App von Carpediem Apps</span>
           <span class="lang-en">An app by Carpediem Apps</span>
